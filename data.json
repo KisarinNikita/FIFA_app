@@ -1,0 +1,46 @@
+[
+	{
+		"id" : 1,
+		"photo" : "https://scontent.fhen1-1.fna.fbcdn.net/v/t1.0-1/p200x200/15027934_1278947405460093_5413847638862936521_n.jpg?oh=6a018651cae6132f747876158a6f620d&oe=5932C65F",
+		"name" : "Marco Reus",
+		"wr" : 1,
+		"gp" : 1,
+		"w" : 1,
+		"d" : 1,
+		"l" : 1,
+		"pts" : 1
+	},
+	{
+		"id" : 2,
+		"photo" : "https://scontent.fhen1-1.fna.fbcdn.net/v/t1.0-1/c0.0.156.156/12508821_170448386653409_757063517323554857_n.jpg?oh=ffbe53732856677f57e121320ce7e650&oe=5938DDBC",
+		"name" : "Lionel Messi",
+		"wr" : 2,
+		"gp" : 2,
+		"w" : 2,
+		"d" : 2,
+		"l" : 2,
+		"pts" : 2
+	},
+	{
+		"id" : 3,
+		"photo" : "https://scontent.fhen1-1.fna.fbcdn.net/v/t1.0-1/c0.0.156.156/12508821_170448386653409_757063517323554857_n.jpg?oh=ffbe53732856677f57e121320ce7e650&oe=5938DDBC",
+		"name" : "Lionel Messi",
+		"wr" : 3,
+		"gp" : 3,
+		"w" : 3,
+		"d" : 3,
+		"l" : 3,
+		"pts" : 3
+	},
+	{
+		"id" : 4,
+		"photo" : "https://scontent.fhen1-1.fna.fbcdn.net/v/t1.0-1/c0.0.156.156/12508821_170448386653409_757063517323554857_n.jpg?oh=ffbe53732856677f57e121320ce7e650&oe=5938DDBC",
+		"name" : "Lionel Messi",
+		"wr" : 4,
+		"gp" : 4,
+		"w" : 4,
+		"d" : 4,
+		"l" : 4,
+		"pts" : 4
+	}
+]

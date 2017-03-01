@@ -1,0 +1,98 @@
+<div class="container mainpage">
+  <div class="mainpage_left">
+    <img class="mainpage_left-img" src="{{photo}}" alt="">
+  </div>
+  <div class="mainpage_right">
+    <h1 class="mainpage_right-title">{{name}}</h1>
+    <p class="mainpage_right-stats"><span>WinRate</span>75%</p>
+    <p class="mainpage_right-stats"><span>Scores</span>25</p>
+    <p class="mainpage_right-stats"><span>Place</span>1</p>
+  </div>
+</div>
+
+<div class="container navigation">
+  <nav>
+    <a class="active" href="#/">League Table</a>
+    <a href="#/send">Send invitation</a>
+    <a class="" href="#/accept">My invitation <span>+1<span></a>
+  </nav>
+</div>
+
+<div class="container">
+  <h3>League Table</h3>
+  <div class="table-container">
+    <div class="row big-head">
+      <div class="table-cell-head">
+        №
+      </div>
+      <div class="table-cell-head">
+        Name
+      </div>
+      <div class="table-cell-head">
+        Games
+      </div>
+      <div class="table-cell-head">
+        Won
+      </div>
+      <div class="table-cell-head">
+        Draw
+      </div>
+      <div class="table-cell-head">
+        Lost
+      </div>
+      <div class="table-cell-head">
+        Scores
+      </div>
+    </div>
+
+    <div class="row mini-head">
+      <div class="table-cell-head">
+        №
+      </div>
+      <div class="table-cell-head">
+        Name
+      </div>
+      <div class="table-cell-head">
+        G
+      </div>
+      <div class="table-cell-head">
+        W
+      </div>
+      <div class="table-cell-head">
+        D
+      </div>
+      <div class="table-cell-head">
+        L
+      </div>
+      <div class="table-cell-head">
+        S
+      </div>
+    </div>
+
+    <div class="row" ng-repeat="player in players" >
+      <div class="table-cell">
+        {{$index + 1}}
+      </div>
+      <div class="table-cell name-cell">
+        <img src="{{player.photo}}">{{player.name}}
+      </div>
+      <div class="table-cell">
+        {{player.gp}}
+      </div>
+      <div class="table-cell">
+        {{player.w}}
+      </div>
+      <div class="table-cell">
+        {{player.d}}
+      </div>
+      <div class="table-cell">
+        {{player.l}}
+      </div>
+      <div class="table-cell">
+        {{player.pts}}
+      </div>
+    </div>
+
+  </div>
+
+</div>

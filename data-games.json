@@ -1,0 +1,26 @@
+[
+	{
+		"id" : 1,
+		"p1n" : "Marco Reus",
+		"p2n" : "Lionel Messi",
+		"p1g" : 2,
+		"p2g" : 3,
+		"status" : "+"
+	},
+	{
+		"id" : 1,
+		"p1n" : "Marco Reus",
+		"p2n" : "Lionel Messi",
+		"p1g" : 0,
+		"p2g" : 1,
+		"status" : "+"
+	},
+		{
+		"id" : 1,
+		"p1n" : "Marco Reus",
+		"p2n" : "Lionel Messi",
+		"p1g" : 1,
+		"p2g" : 6,
+		"status" : "+"
+	}
+]

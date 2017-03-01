@@ -1,0 +1,64 @@
+<div class="container navigation">
+  <nav>
+    <a href="#/">League Table</a>
+    <a href="#/send">Send invitation</a>
+    <a class="active" href="#/accept">My invitation <span>+1<span></a>
+  </nav>
+</div>
+
+<div class="container">
+
+  <div class="invite-result">
+    <h3>Player Bob invites you to play</h3>
+    <div class="left-player">
+      <div class="send-b">
+        <a class="" href="">Accept</a>
+      </div>
+    </div>
+    <div class="right-player">
+      <div class="send-b send-b-d">
+        <a class="" href="">Decline</a>
+      </div>
+    </div>
+  </div>
+
+  <h3>History</h3>
+  <div class="table-container">
+    <div class="row">
+      <div class="table-cell-head">
+        №
+      </div>
+      <div class="table-cell-head">
+        Name
+      </div>
+      <div class="table-cell-head">
+        Result
+      </div>
+      <div class="table-cell-head">
+        Status
+      </div>
+      <div class="table-cell-head">
+      </div>
+    </div>
+
+    <div class="row" ng-repeat="player in players" >
+      <div class="table-cell">
+        {{$index + 1}}
+      </div>
+      <div class="table-cell name-cell">
+        {{player.p1n}}
+      </div>
+      <div class="table-cell">
+        {{player.p1g}} - {{player.p2g}}
+      </div>
+      <div class="table-cell">
+        {{player.status}}
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+</div>
