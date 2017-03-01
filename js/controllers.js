@@ -38,10 +38,9 @@ app.controller('playerCtrl', function ($scope, $http, $cookieStore, authFact){
   $http.get("data.json").success(function(data) {
     $scope.players = data;
   });
-});
 
-app.controller('gamesCtrl', function ($scope, $http){
   $http.get("data-games.json").success(function(data) {
-    $scope.players = data;
+    $scope.history = data;
   });
+  
 });

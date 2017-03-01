@@ -15,11 +15,12 @@ app.config(function($routeProvider){
     })
     .when('/accept', {
       templateUrl:"accept.html",
-      controller: "gamesCtrl"
+      controller: "playerCtrl"
     })
     .otherwise({
       template:"404 error"
     })
+
 });
 
 app.run(function($rootScope, $location, authFact){
