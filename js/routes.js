@@ -17,6 +17,10 @@ app.config(function($routeProvider){
       templateUrl:"accept.html",
       controller: "playerCtrl"
     })
+    .when('/games', {
+      templateUrl:"games.html",
+      controller: "playerCtrl"
+    })
     .otherwise({
       template:"404 error"
     })

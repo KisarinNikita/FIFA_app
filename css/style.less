@@ -12,6 +12,7 @@ body{
 
 @992:   ~"(max-width: 992px)";
 @768:   ~"(max-width: 768px)";
+@500:   ~"(max-width: 500px)";
 
 .container {
   width: 992px;
@@ -185,6 +186,12 @@ body{
       .transition(200ms);
     }
   }
+
+  .cansel-b{
+    background: red;
+    color:#fff;
+  }
+
 
     img{
       width: 40px;
@@ -362,19 +369,32 @@ input[type=number] {
 
 
 .invite-result{
-  position: relative;
-  margin-bottom: 50px;
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.85);
+    justify-content: space-between;
+    border-radius: 2px;
+    margin-top: 35px;
 
-  .send-b{
+
     a{
-      padding: 10px 15px;
       border-radius: 2px;
+      display: block;
+      height: 50px;
+      line-height: 50px;
+      padding-left: 15px;
+      padding-right: 15px;
       font-weight: 600;
       background: #ffe238;
       color: #18191b;
       font-size: 18px;
-      margin-right: 15px;
       .transition(200ms);
+
+      @media@768{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
 
       &:hover{
         text-decoration: none;
@@ -388,21 +408,19 @@ input[type=number] {
         .transition(200ms);
       }
     }
-  }
 
-  .send-b-d{
-    a{
+    .send-c{
       background: red;
       color:#fff;
     }
-  }
 
   h3{
     font-weight: 600;
     text-align: center;
     color:#1a1a1a;
-    font-weight: 300px;
-    font-size: 25px;
+    margin: 0px;
+    font-size: 22px;
+    line-height: 50px;
   }
 
   h4{
@@ -474,5 +492,141 @@ input[type=number] {
   &:hover{
     .transition(200ms);
     opacity: 1;
+  }
+}
+
+.game-row{
+  width: 95%;
+  margin-left: 15px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  position: relative;
+  margin-top: 25px;
+  border-radius: 2px;
+
+  @media@768{
+    height: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  p{
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+
+    @media@768{
+      font-size: 18px;
+    }
+
+    @media@500{
+      font-size: 14px;
+    }
+  }
+
+  form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media@768{
+      justify-content: space-around;
+    }
+  }
+
+  input[type="number"]{
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 5px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #18191b;
+    background: none;
+    width: 80px;
+    text-align: center;
+    outline: none;
+
+    @media@768{
+      width: 50px;
+      font-size: 22px;
+    }
+
+    &:focus{
+      border: 1px solid #ffe238;
+    }
+  }
+
+  input[type="submit"]{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 2px;
+    font-weight: 600;
+    background: #ffe238;
+    color: #18191b;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    .transition(200ms);
+
+    &:hover{
+      text-decoration: none;
+      background: #18191b;
+      color: #ffe238;
+      .transition(200ms);
+    }
+
+    &:focus{
+      text-decoration: none;
+      .transition(200ms);
+    }
+
+    @media@768{
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 50%;
+    }
+  }
+
+  button{
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+    background: red;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 15px;
+    outline: none;
+    .transition(200ms);
+
+    @media@768{
+      position: absolute;
+      bottom: 0px;
+      left:0px;
+      width: 50%;
+    }
+
+    &:hover{
+      text-decoration: none;
+      background: #18191b;
+      color: #ffe238;
+      .transition(200ms);
+    }
+
+    &:focus{
+      text-decoration: none;
+      .transition(200ms);
+    }
   }
 }

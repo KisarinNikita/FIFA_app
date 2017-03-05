@@ -170,6 +170,10 @@ body {
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
 }
+.table-cell .cansel-b {
+  background: red;
+  color: #fff;
+}
 .table-cell img {
   width: 40px;
   margin-right: 25px;
@@ -337,21 +341,35 @@ input[type=number] {
 .invite-result {
   position: relative;
   margin-bottom: 50px;
-}
-.invite-result .send-b a {
-  padding: 10px 15px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.85);
+  justify-content: space-between;
   border-radius: 2px;
+  margin-top: 35px;
+}
+.invite-result a {
+  border-radius: 2px;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
   font-weight: 600;
   background: #ffe238;
   color: #18191b;
   font-size: 18px;
-  margin-right: 15px;
   transition: all 200ms linear;
   -moz-transition: all 200ms linear;
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
 }
-.invite-result .send-b a:hover {
+@media (max-width: 768px) {
+  .invite-result a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.invite-result a:hover {
   text-decoration: none;
   background: #18191b;
   color: #ffe238;
@@ -360,14 +378,14 @@ input[type=number] {
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
 }
-.invite-result .send-b a:focus {
+.invite-result a:focus {
   text-decoration: none;
   transition: all 200ms linear;
   -moz-transition: all 200ms linear;
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
 }
-.invite-result .send-b-d a {
+.invite-result .send-c {
   background: red;
   color: #fff;
 }
@@ -375,8 +393,9 @@ input[type=number] {
   font-weight: 600;
   text-align: center;
   color: #1a1a1a;
-  font-weight: 300px;
-  font-size: 25px;
+  margin: 0px;
+  font-size: 22px;
+  line-height: 50px;
 }
 .invite-result h4 {
   font-weight: 900;
@@ -445,4 +464,154 @@ input[type=number] {
   -webkit-transition: all 200ms linear;
   -o-transition: all 200ms linear;
   opacity: 1;
+}
+.game-row {
+  width: 95%;
+  margin-left: 15px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  position: relative;
+  margin-top: 25px;
+  border-radius: 2px;
+}
+@media (max-width: 768px) {
+  .game-row {
+    height: 100px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+.game-row p {
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .game-row p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .game-row p {
+    font-size: 14px;
+  }
+}
+.game-row form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .game-row form {
+    justify-content: space-around;
+  }
+}
+.game-row input[type="number"] {
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid #18191b;
+  background: none;
+  width: 80px;
+  text-align: center;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .game-row input[type="number"] {
+    width: 50px;
+    font-size: 22px;
+  }
+}
+.game-row input[type="number"]:focus {
+  border: 1px solid #ffe238;
+}
+.game-row input[type="submit"] {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 2px;
+  font-weight: 600;
+  background: #ffe238;
+  color: #18191b;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+.game-row input[type="submit"]:hover {
+  text-decoration: none;
+  background: #18191b;
+  color: #ffe238;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+.game-row input[type="submit"]:focus {
+  text-decoration: none;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+@media (max-width: 768px) {
+  .game-row input[type="submit"] {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    width: 50%;
+  }
+}
+.game-row button {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  background: red;
+  color: #fff;
+  font-size: 18px;
+  margin-right: 15px;
+  outline: none;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+@media (max-width: 768px) {
+  .game-row button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 50%;
+  }
+}
+.game-row button:hover {
+  text-decoration: none;
+  background: #18191b;
+  color: #ffe238;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+}
+.game-row button:focus {
+  text-decoration: none;
+  transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
 }
